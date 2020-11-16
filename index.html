@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller by necrowarr</title>
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "page-main-wrapper">
+        <div class = "dice-group">
+            <div class = "d20"> 
+                <input id = "d20" class = "dice-size" onclick = "rollDice(20)" type = "button" value = "    D20    "/>
+            </div>
+            <div class = "d12">
+                <input id = "d12" class = "dice-size" onclick = "rollDice(12)" type = "button" value = "    D12    "/>
+            </div>
+            <div class = "d10">
+                <input id = "d10" class = "dice-size" onclick = "rollDice(10)" type = "button" value = "    D10    "/>
+            </div>
+            <div class = "d8">
+                <input id = "d8" class = "dice-size" onclick = "rollDice(8)" type = "button" value = "     D8     "/>
+            </div>
+            <div class = "d6">
+                <input id = "d6" class = "dice-size" onclick = "rollDice(6)" type = "button" value = "     D6     "/>
+            </div>
+            <div class = "d4">
+                <input id = "d4" class = "dice-size" onclick = "rollDice(4)" type = "button" value = "     D4     "/>
+            </div>
+        </div>
+        <p></p>
+
+        <!--результаты ролла-->
+        <div class = "" id = "resultColumn">
+            <div class = "chosen-die" id = "selected-die">
+                Click dice to the roll
+            </div>
+            <div id = "multidice">                
+            </div>
+            <p><span class = "total-p">Total</span></p>
+            <div class = "total-box">
+                <div id = "results">  
+                </div>               
+            </div>
+            <div class = "multi-dice-dropdown">
+                <select id="dicemultiply">
+                  <option value = "1">1</option>
+                  <option value = "2">2</option>
+                  <option value = "3">3</option>
+                  <option value = "4">4</option>
+                  <option value = "5">5</option>
+                  <option value = "6">6</option>
+                  <option value = "7">7</option>
+                </select>
+            </div>
+            <p></p>
+            <div class = "chosen-modifier" id = "selected-modifier">
+                Use your mastery and skill bonus
+            </div>
+            <p></p>
+            <div class = "modifier">
+                <select id="modify">
+                    <option value = "0">+0</option>
+                    <option value = "1">+1</option>
+                    <option value = "2">+2</option>
+                    <option value = "3">+3</option>
+                    <option value = "4">+4</option>
+                    <option value = "5">+5</option>
+                    <option value = "6">+6</option>
+                    <option value = "7">+7</option>
+                    <option value = "8">+8</option>
+                    <option value = "9">+9</option>
+                    <option value = "10">+10</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <script src = "diceRoller.js"></script>
+</body>
+</html>

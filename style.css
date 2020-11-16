@@ -1,0 +1,57 @@
+body {
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    background-image:url(background.png);
+    background-size: cover;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.chosen-die {
+    color: #ffffff;
+}
+
+.total-p {
+    color: #ffffff;
+}
+
+.chosen-modifier {
+    color: #ffffff;
+}
+
+
+.d20 {display: inline-block;
+}
+.d12 {display: inline-block;
+}
+.d10 {display: inline-block;
+}
+.d8 {display: inline-block;
+}
+.d6 {display: inline-block;
+}
+.d4 {display: inline-block;
+}
+
+.dice-size {
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: #4676D7;
+    color: #ffffff;
+    padding: 8px 16px;
+    font-size: 16px;
+    
+}
+.dice-size:hover {
+    color: ffffff;
+    background-color:darkblue;
+}
+
+.results {
+    color: #ffffff;
+}
+
+.multidice {
+    color:#ffffff;
+}
